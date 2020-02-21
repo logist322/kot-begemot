@@ -1,0 +1,84 @@
+.contacts__item {
+  @include desktop {
+    position: relative;
+    padding-left: 64px;
+  }
+
+  &::before {
+    @include desktop {
+      position: absolute;
+      content: "";
+      width: 42px;
+      height: 42px;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #FFFFFF;
+      box-shadow: 0px 3px 10px rgba(52, 86, 104, 0.11);
+      border-radius: 5px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 20px 20px;
+    }
+  }
+}
+
+.contacts__item:not(:last-child) {
+  @include desktop {
+    margin-right: 63px;
+  }
+}
+
+.contacts__item--address {
+  @include desktop {
+    width: 150px;
+  }
+
+  &::before {
+    @include desktop {
+      background-image: url("../img/header-pin.svg");
+    }
+  }
+}
+
+.contacts__address {
+  @include desktop {
+    font-family: $regular;
+    font-size: 14px;
+    line-height: 1.57;
+    color: $black;
+    text-decoration: underline dashed;
+  }
+}
+
+.contacts__item--phone {
+  @include desktop {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+  }
+
+  &::before {
+    @include desktop {
+      background-image: url("../img/header-call.svg");
+    }
+  }
+}
+
+.contacts__phone {
+  @include desktop {
+    font-family: $bold;
+    font-size: 16px;
+    color: $black;
+  }
+}
+
+.contacts__order-call {
+  @include desktop {
+    font-family: $regular;
+    font-size: 14px;
+    color: $black;
+    text-decoration: underline dashed;
+  }
+}

@@ -1,0 +1,113 @@
+.header {
+  background-color: #fff;
+
+  @include desktop {
+    padding-left: 160px;
+  }
+}
+
+.header__container {
+  padding: 12px 0;
+  margin: 0 15px;
+  display: flex;
+
+  @include desktop {
+    padding: 30px 160px 40px 35px;
+    align-items: center;
+  }
+}
+
+.header__logo-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  @include desktop {
+    width: auto;
+    margin-right: auto;
+  }
+}
+
+.header__logo {
+  padding-left: 73px;
+  margin-right: auto;
+  position: relative;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  font-family: $museoregular;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $black;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 65px;
+    background: url("../img/logo.png") 50% 50% no-repeat;
+  }
+}
+
+.header__button {
+  display: block;
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 10px rgba(52, 86, 104, 0.11);
+  background-size: 17px 17px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  color: $yellow-dark;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.header__button--cart {
+  background-image: url("../img/header-cart.svg");
+}
+
+.header__button--call {
+  background-image: url("../img/header-call.svg");
+}
+
+.header__burger {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  margin: 0;
+  margin-left: 5px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: $black;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.header__nav {
+  display: none;
+
+  @include desktop {
+    display: flex;
+    margin-right: 90px;
+  }
+}
+
+.header__contacts-list {
+  display: none;
+
+  @include desktop {
+    display: flex;
+  }
+}

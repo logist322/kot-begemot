@@ -1,0 +1,13 @@
+.aside {
+  display: none;
+
+  @include desktop {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 160px;
+    height: 100vh;
+    background: #ffffff;
+  }
+}

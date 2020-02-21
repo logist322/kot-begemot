@@ -1,0 +1,13 @@
+.nav__link  {
+  @include desktop {
+    font-family: $regular;
+    font-size: 14px;
+    color: $black;
+  }
+}
+
+.nav__link:not(:last-child)  {
+  @include desktop {
+    margin-right: 80px;
+  }
+}
