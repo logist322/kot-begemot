@@ -3,11 +3,94 @@
 
   @include desktop {
     display: flex;
+    box-sizing: border-box;
+    padding: 47px 0;
     position: fixed;
     left: 0;
     top: 0;
     width: 160px;
     height: 100vh;
     background: #ffffff;
+  }
+}
+
+.aside__container {
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+.aside__burger {
+  @include desktop {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    background-image: url("../img/icon-menu-burger.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    color: $black;
+    cursor: pointer;
+  }
+}
+
+.aside__cart {
+  @include desktop {
+    width: 55px;
+    height: 55px;
+    margin-top: 100px;
+    margin-bottom: auto;
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(52, 86, 104, 0.11);
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 26px 26px;
+    background-image: url("../img/header-cart.svg");
+  }
+
+  &:hover {
+    @include desktop {
+      box-shadow: 0 3px 10px rgba(52, 86, 104, 0.3);
+    }
+  }
+
+  &:active {
+    @include desktop {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.aside__call {
+  @include desktop {
+    width: 60px;
+    height: 60px;
+    margin-top: 100px;
+    background: $yellow-light;
+    box-shadow: 0 3px 10px rgba(52, 86, 104, 0.3);
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 27px 27px;
+    background-image: url("../img/header-call-white.svg");
+  }
+
+  &:hover {
+    @include desktop {
+      box-shadow: 0 3px 10px rgba(52, 86, 104, 0.6);
+    }
+  }
+
+  &:active {
+    @include desktop {
+      transform: scale(0.9);
+    }
   }
 }

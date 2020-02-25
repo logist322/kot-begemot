@@ -10,11 +10,11 @@
       content: "";
       width: 42px;
       height: 42px;
-      left: 0px;
+      left: 0;
       top: 50%;
       transform: translateY(-50%);
-      background: #FFFFFF;
-      box-shadow: 0px 3px 10px rgba(52, 86, 104, 0.11);
+      background: #ffffff;
+      box-shadow: 0 3px 10px rgba(52, 86, 104, 0.11);
       border-radius: 5px;
       background-repeat: no-repeat;
       background-position: 50% 50%;
@@ -47,7 +47,7 @@
     font-size: 14px;
     line-height: 1.57;
     color: $black;
-    text-decoration: underline dashed;
+    text-decoration: dashed underline;
   }
 }
 

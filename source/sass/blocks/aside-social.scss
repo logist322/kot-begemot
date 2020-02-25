@@ -1,0 +1,55 @@
+.aside-social {
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.aside-social__item:not(:last-child) {
+  @include desktop {
+    margin-bottom: 55px;
+  }
+}
+
+.aside-social__link {
+  @include desktop {
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    filter: grayscale(1);
+  }
+
+  &:hover {
+    @include desktop {
+      filter: grayscale(0);
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    @include desktop {
+      opacity: 0.3;
+    }
+  }
+}
+
+.aside-social__link--vk {
+  @include desktop {
+    background-image: url("../img/vk.svg");
+  }
+}
+
+.aside-social__link--fb {
+  @include desktop {
+    background-image: url("../img/fb.svg");
+  }
+}
+
+.aside-social__link--inst {
+  @include desktop {
+    background-image: url("../img/inst.svg");
+  }
+}

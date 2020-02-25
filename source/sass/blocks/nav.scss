@@ -1,12 +1,45 @@
-.nav__link  {
+.nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.1);
+
   @include desktop {
-    font-family: $regular;
-    font-size: 14px;
-    color: $black;
+    border-bottom: none;
   }
 }
 
-.nav__link:not(:last-child)  {
+.nav__link {
+  font-family: $museoregular;
+  font-size: 14px;
+  color: $black;
+  border-top: 1px solid rgba(33, 33, 33, 0.1);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include desktop {
+    display: inline;
+    height: auto;
+    font-family: $regular;
+    font-size: 14px;
+    color: $black;
+    border-top: none;
+  }
+
+  &:hover {
+    @include desktop {
+      font-weight: 700;
+    }
+  }
+
+  &:active {
+    @include desktop {
+      opacity: 0.3;
+    }
+  }
+}
+
+.nav__link:not(:last-child) {
   @include desktop {
     margin-right: 80px;
   }

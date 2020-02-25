@@ -9,7 +9,22 @@
 </head>
 <body>
   <aside class="aside">
-
+    <div class="aside__container">
+      <button class="aside__burger" type="button"><span class="visually-hidden">Меню</span></button>
+      <a href="#" class="aside__cart"><span class="visually-hidden">Корзина</span></a>
+      <ul class="aside__social-list aside-social list-style-reset">
+        <li class="aside-social__item">
+          <a href="#" class="aside-social__link aside-social__link--vk"><span class="visually-hidden">Вконтакте</span></a>
+        </li>
+        <li class="aside-social__item">
+          <a href="#" class="aside-social__link aside-social__link--fb"><span class="visually-hidden">Фейсбук</span></a>
+        </li>
+        <li class="aside-social__item">
+          <a href="#" class="aside-social__link aside-social__link--inst"><span class="visually-hidden">Инстаграм</span></a>
+        </li>
+      </ul>
+      <a href="tel:88004598475" class="aside__call"><span class="visually-hidden">Позвонить</span></a>
+    </div>
   </aside>
   <header class="header">
     <div class="header__container">
@@ -17,9 +32,9 @@
         <a href="index.html" class="header__logo">Кот-Бегемот</a>
         <a href="#" class="header__button header__button--cart"><span class="visually-hidden">Корзина</span></a>
         <a href="tel:88004598475" class="header__button header__button--call"><span class="visually-hidden">Позвонить</span></a>
-        <button class="header__burger" type="button"></button>
+        <button class="header__burger" type="button"><span class="visually-hidden">Меню</span></button>
       </div>
-      <nav class="header__nav nav">
+      <nav class="header__nav nav header__nav--hidden">
         <a href="#" class="nav__link">Акции</a>
         <a href="#" class="nav__link">Доставка и оплата</a>
         <a href="#" class="nav__link">Каталог</a>
@@ -39,8 +54,15 @@
       </ul>
     </div>
   </header>
+
   <main>
 
   </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="js/menu.js"></script>
 </body>
 </html>
