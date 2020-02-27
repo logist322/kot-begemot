@@ -1,0 +1,81 @@
+.promo {
+  @include desktop {
+    padding: 160px 160px 220px;
+  }
+}
+
+.promo__container {
+  padding-top: 40px;
+  margin: 0 15px;
+
+  @include desktop {
+    display: flex;
+    padding-top: 0;
+    margin: 0;
+  }
+}
+
+.promo__text {
+  @include desktop {
+    width: 55%;
+  }
+}
+
+.promo__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include desktop {
+    width: 480px;
+  }
+}
+
+.promo__title {
+  font-family: $museoextrabold;
+  font-size: 24px;
+  line-height: 1.15;
+  color: $black;
+
+  @include desktop {
+    font-size: 36px;
+  }
+}
+
+.promo__subtitle {
+  margin-top: 25px;
+  font-family: $regular;
+  font-size: 13px;
+  line-height: 1.44;
+  color: $black;
+
+  @include desktop {
+    width: 320px;
+    margin-top: 55px;
+    font-size: 15px;
+  }
+}
+
+.promo__button {
+  margin-top: 30px;
+  padding: 20px 43px;
+  background: $yellow-light;
+  border-radius: 60px;
+  font-family: $bold;
+  font-size: 12px;
+  color: #ffffff;
+
+  @include desktop {
+    padding: 23px 43px;
+    margin-top: 55px;
+    font-size: 14px;
+  }
+}
+
+.promo__slider {
+  margin-top: 30px;
+
+  @include desktop {
+    margin-top: 0;
+  }
+}

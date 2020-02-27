@@ -1,0 +1,71 @@
+.slider {
+  display: flex;
+}
+
+.slider__item {
+  padding: 20px 170px 20px 20px;
+  background: $yellow-light;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include desktop {
+    padding: 0;
+    width: 280px;
+  }
+}
+
+.slider__title {
+  font-family: $museobold;
+  font-size: 14px;
+  line-height: 1.15;
+  color: #ffffff;
+
+  @include desktop {
+    font-size: 25px;
+  }
+}
+
+.slider__percent {
+  margin-top: 10px;
+  font-family: $museoextrabold;
+  font-size: 40px;
+  line-height: 1.15;
+  color: #ffffff;
+
+  @include desktop {
+    margin-top: 20px;
+    font-size: 80px;
+  }
+}
+
+.slider__description {
+  margin-top: 10px;
+  font-family: $regular;
+  font-size: 12px;
+  line-height: 1.35;
+  color: #ffffff;
+
+  @include desktop {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+}
+
+.slider__details {
+  margin-top: 13px;
+  padding: 10px 25px;
+  font-family: $regular;
+  font-size: 10px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 60px;
+
+  @include desktop {
+    margin-top: 30px;
+    font-size: 14px;
+    padding: 20px 45px;
+  }
+}

@@ -46,3 +46,11 @@
   font-display: fallback;
   src: url("../fonts/museosanscyrl-700.woff") format("woff");
 }
+
+@font-face {
+  font-family: "MuseoSansCyrl-900";
+  font-style: normal;
+  font-weight: 900;
+  font-display: fallback;
+  src: url("../fonts/museosanscyrl-900.woff") format("woff");
+}
