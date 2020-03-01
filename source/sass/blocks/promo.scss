@@ -1,6 +1,12 @@
 .promo {
   @include desktop {
-    padding: 160px 160px 220px;
+    padding: 160px 160px 350px;
+    background-image:
+      url("../img/paws.png"),
+      url("../img/dog.png");
+    background-size: 960px 860px, 960px 860px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right -20px top 0, right -20px top 0;
   }
 }
 
@@ -67,7 +73,7 @@
 
   @include desktop {
     padding: 23px 43px;
-    margin-top: 55px;
+    margin-top: 60px;
     font-size: 14px;
   }
 }

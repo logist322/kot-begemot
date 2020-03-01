@@ -13,7 +13,9 @@
 
   @include desktop {
     padding: 0;
+    padding-top: 18px;
     width: 280px;
+    background: transparent;
   }
 }
 
@@ -49,7 +51,7 @@
   color: #ffffff;
 
   @include desktop {
-    margin-top: 30px;
+    margin-top: 45px;
     font-size: 15px;
   }
 }
@@ -64,7 +66,7 @@
   border-radius: 60px;
 
   @include desktop {
-    margin-top: 30px;
+    margin-top: 45px;
     font-size: 14px;
     padding: 20px 45px;
   }
