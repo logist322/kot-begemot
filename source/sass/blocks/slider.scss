@@ -23,7 +23,7 @@
   font-family: $museobold;
   font-size: 14px;
   line-height: 1.15;
-  color: #ffffff;
+  color: $white;
 
   @include desktop {
     font-size: 25px;
@@ -35,7 +35,7 @@
   font-family: $museoextrabold;
   font-size: 40px;
   line-height: 1.15;
-  color: #ffffff;
+  color: $white;
 
   @include desktop {
     margin-top: 20px;
@@ -48,7 +48,7 @@
   font-family: $regular;
   font-size: 12px;
   line-height: 1.35;
-  color: #ffffff;
+  color: $white;
 
   @include desktop {
     margin-top: 45px;
@@ -61,8 +61,8 @@
   padding: 10px 25px;
   font-family: $regular;
   font-size: 10px;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: $white;
+  border: 1px solid $white;
   border-radius: 60px;
 
   @include desktop {

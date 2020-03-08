@@ -1,0 +1,76 @@
+.advantages-card {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(52, 86, 104, 0.1);
+  padding: 20px 44px 20px 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+
+  @include desktop {
+    box-shadow: 0 8px 30px rgba(52, 86, 104, 0.15);
+    padding: 47px 80px 47px 165px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 28px;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    @include desktop {
+      left: 65px;
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  &--delivery::after {
+    background-image: url("../img/truck.svg");
+  }
+
+  &--bonus::after {
+    background-image: url("../img/gift.svg");
+  }
+
+  &--sales::after {
+    background-image: url("../img/bag.svg");
+  }
+
+  &:not(:first-child) {
+    margin-top: 10px;
+
+    @include desktop {
+      margin-top: 0;
+    }
+  }
+}
+
+.advantages-card__title {
+  font-family: $bold;
+  font-size: 14px;
+  color: $yellow-dark;
+
+  @include desktop {
+    font-size: 16px;
+  }
+}
+
+.advantages-card__description {
+  font-family: $regular;
+  font-size: 12px;
+  line-height: 1.4;
+  color: $black;
+  margin-top: 5px;
+
+  @include desktop {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}

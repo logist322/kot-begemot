@@ -1,0 +1,31 @@
+.advantages {
+  @include desktop {
+    position: relative;
+    top: -110px;
+  }
+}
+
+.advantages__container {
+  margin: 30px 15px 0;
+
+  @include desktop {
+    margin: 0 100px;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.advantages__item {
+  @include desktop {
+    width: 456px;
+    box-sizing: border-box;
+  }
+}

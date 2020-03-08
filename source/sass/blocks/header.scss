@@ -1,5 +1,5 @@
 .header {
-  background-color: #ffffff;
+  background-color: $white;
   position: relative;
 }
 
@@ -55,7 +55,7 @@
   margin-right: 10px;
   width: 35px;
   height: 35px;
-  background: #ffffff;
+  background: $white;
   box-shadow: 0 3px 10px rgba(52, 86, 104, 0.11);
   background-size: 17px 17px;
   background-position: 50% 50%;
