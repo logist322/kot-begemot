@@ -1,6 +1,6 @@
 .promo {
   @include desktop {
-    padding: 160px 160px 350px;
+    padding: 160px 160px 200px;
     background-image:
       url("../img/paws.png"),
       url("../img/dog.png");
@@ -16,6 +16,7 @@
 
   @include desktop {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 0;
     margin: 0;
   }
@@ -83,5 +84,29 @@
 
   @include desktop {
     margin-top: 0;
+  }
+}
+
+.promo__slider-controls {
+  display: none;
+
+  @include desktop {
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+
+.promo__slider-dots {
+  @include desktop {
+    margin-right: auto;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+}
+
+.promo__slider-buttons {
+  @include desktop {
+    margin-right: 690px;
   }
 }

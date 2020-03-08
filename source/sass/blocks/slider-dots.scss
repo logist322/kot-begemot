@@ -1,0 +1,22 @@
+.slider-dots {
+  @include desktop {
+    display: flex;
+  }
+}
+
+.slider-dots__dot {
+  @include desktop {
+    width: 9px;
+    height: 9px;
+    background: #e1e1e1;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  &--active {
+    @include desktop {
+      background: $yellow-light;
+    }
+  }
+}

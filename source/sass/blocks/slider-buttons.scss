@@ -1,0 +1,61 @@
+.slider-buttons {
+  @include desktop {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.slider-buttons__left {
+  @include desktop {
+    position: relative;
+    margin-right: 27px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 2px solid $yellow-dark;
+    background-color: $grey;
+  }
+
+  &::after {
+    @include desktop {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform-origin: center;
+      transform: translate(-25%, -50%) rotate(45deg);
+      width: 8px;
+      height: 8px;
+      border-left: 2px solid $yellow-dark;
+      border-bottom: 2px solid $yellow-dark;
+    }
+  }
+}
+
+.slider-buttons__right {
+  @include desktop {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: none;
+    background-color: $yellow-dark;
+  }
+
+  &::after {
+    @include desktop {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform-origin: center;
+      transform: translate(-75%, -50%) rotate(45deg);
+      width: 14px;
+      height: 14px;
+      border-right: 2px solid #ffffff;
+      border-top: 2px solid #ffffff;
+    }
+  }
+}
